@@ -1,0 +1,16 @@
+@use '../../colors.scss';
+
+.header {
+  background-color: colors.$themeDark;
+  border-bottom: 1px solid black;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  color: colors.$themeGrey;
+  box-shadow: 0 3px 7px black;
+  align-self: stretch;
+}
+
+h1 {
+  filter: drop-shadow(-1px 1px 1px black);
+}
