@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { useContext, useState } from 'react';
 import OrderContext from '../../../store/order-context';
-import Card from '../../UI/Card/Card';
+import Button from '../../UI/Button/Button';
 import DisplayCartModal from '../../CartModal/CartModal';
 
 interface HeaderCartProps {
@@ -25,11 +25,11 @@ const HeaderCart: React.FC<HeaderCartProps> = (props) => {
 
   return (
     <>
-      <Card className={`${styles.headerCart} ${props.className}`} onClick={toggleModal}>
+      <Button className={`${styles.headerCart} ${props.className}`} onClick={toggleModal}>
         <FontAwesomeIcon icon={faShoppingCart} />
         <h2 className={styles.cartName}>Cart</h2>
         <h2>{numberOfItems}</h2>
-      </Card>
+      </Button>
       {isModalDisplayed && <DisplayCartModal onClose={toggleModal}/>}
     </>
   );

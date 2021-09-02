@@ -1,9 +1,14 @@
 import styles from './Button.module.css';
 
-const Button: React.FC = (props) => {
+interface ButtonProps {
+  className?: string,
+  onClick?: () => void
+}
+
+const Button: React.FC<ButtonProps> = (props) => {
 
   return (
-    <button className={styles.button}>{props.children}</button>
+    <button className={`${styles.button} ${props.className}`} onClick={props.onClick}>{props.children}</button>
   );
 }
 

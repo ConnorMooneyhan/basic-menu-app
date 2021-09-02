@@ -6,6 +6,9 @@ div .headerCart {
   justify-content: space-around;
   border-radius: 1em;
   box-shadow: 1px 2px 5px black;
+  &:hover, &:focus {
+    background-color: hsla(0, 0%, 100%, .07);
+  }
 }
 
 .cartName {
