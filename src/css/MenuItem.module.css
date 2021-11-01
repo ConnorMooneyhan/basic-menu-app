@@ -1,0 +1,32 @@
+div .menuItem {
+  background-color: rgba(212, 171, 110, 0.5);
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em;
+}
+
+.itemInfo {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+.itemInfo * {
+  margin: 0.2em;
+  filter: drop-shadow(0 0 1px #4f3222);
+}
+
+.addToCart {
+  display: flex;
+  flex-direction: column;
+}
+.addToCart label {
+  filter: drop-shadow(0 0 1px #4f3222);
+}
+.addToCart input {
+  width: 35px;
+  border-radius: 0.3em;
+  margin: 0.4em;
+}
+
+/*# sourceMappingURL=MenuItem.module.css.map */

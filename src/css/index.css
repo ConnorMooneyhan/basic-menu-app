@@ -1,0 +1,25 @@
+html {
+  background: #d4ac6e;
+}
+
+body {
+  margin: 0;
+  font-family: "Kaisei Tokumin", serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#overlay-root {
+  display: flex;
+  position: relative;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/*# sourceMappingURL=index.css.map */
